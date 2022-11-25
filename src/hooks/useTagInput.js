@@ -61,6 +61,11 @@ const useTagInput = () => {
   };
 
   const onBaseTextInputKeyDown = (key, tag) => {
+    if (key === "Enter" && search) {
+      onAddTag(search);
+      setSearch("");
+      return;
+    }
     if (filteredTagsList.length) {
       // add tag when user hit enter key
       if (key === "Enter") {
@@ -95,8 +100,8 @@ const useTagInput = () => {
   };
 
   const onDeleteTag = (tag) => {
-    setSelectedTags(selectedTags.filter(selectedTag => selectedTag !== tag));
-  }
+    setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
+  };
 
   return {
     tagInputRef,
