@@ -1,0 +1,42 @@
+.List {
+  position: absolute;
+  top: 100%;
+  margin-top: 8px;
+  width: 90%;
+  background: white;
+  box-shadow: 0px 8px 24px -4px rgba(27, 46, 94, 0.12);
+  border-radius: var(--ab-border-radius-size);
+  translate: 0 -20px;
+  transition: 0.4s;
+  opacity: 0;
+  padding: var(--ab-padding-size);
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.List.Empty {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.List.Open {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
+  transition: 0.4s;
+}
+
+.List__Item {
+  color: #5A6474;
+  padding: var(--ab-padding-size);
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.List__Item.Active {
+  background: #F8F8F8;
+}

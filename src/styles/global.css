@@ -1,0 +1,54 @@
+@font-face {
+  font-family: NotoSans_Regular;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NotoSans_Medium;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/fonts/Noto_Sans/NotoSans-Medium.ttf") format("truetype");
+  }
+
+@font-face {
+  font-family: NotoSans_Black;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Noto_Sans/NotoSans-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NotoSans_SemiBold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Noto_Sans/NotoSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NotoSans_Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Noto_Sans/NotoSans-Bold.ttf") format("truetype");
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: NotoSans_Regular;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+
+:root {
+    --ab-border-radius-size: 8px;
+    --ab-padding-size: 8px;
+}

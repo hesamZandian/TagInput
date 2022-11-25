@@ -1,0 +1,27 @@
+.TagInput {
+    max-width: 200px;
+}
+
+.Tag {
+    text-align: center;
+    padding: 2px var(--ab-padding-size);
+    border-radius: 100px;
+    background: #DDE1EE;
+    color: #3E5BC4;
+    transition: 0.3s;
+    margin-right: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Tag:hover {
+    background: #F2E1E1;
+    color: #CA3B57;
+    transition: 0.3s;
+}
+
+.TagInputList {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
